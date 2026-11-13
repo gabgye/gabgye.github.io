@@ -42,6 +42,8 @@
   p { margin: 0 0 14px; }
   ul { margin: 0 0 14px; padding-left: 20px; }
   li { margin-bottom: 8px; }
+  li ul { margin: 8px 0 0; }
+  li ul li { margin-bottom: 4px; }
   a { color: var(--accent); }
   .card { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 20px; }
   .card p:last-child { margin-bottom: 0; }
@@ -86,12 +88,20 @@
   from universe construction through signal tests, trading costs, and portfolio construction.</p>
   <ul>
     <li><strong>Data audit and revisions.</strong> The platform starts from a commercial vendor database and checks
-    it against the companies&rsquo; SEC filings, as of the date each filing became public, and against an
-    independent second source for prices. Where the sources disagree, the record is corrected from the evidence or
-    excluded systematically. The revisions cover prices, splits, and dividends (for example, price-entry errors and
-    duplicate or phantom dividends), share counts and market values, the timing and content of reported fundamentals (figures are used as first filed, and later
-    restatements are never carried back to earlier dates), and which stocks and months belong in the investable
-    universe.</li>
+    it against the companies&rsquo; SEC filings, as of the date each filing became public, and against
+    independent alternative sources for prices. Where the sources disagree, the record is corrected from the evidence or
+    excluded systematically. The revisions cover four areas:
+      <ul>
+        <li><em>Prices, splits, and dividends:</em> for example, price-entry errors and duplicate or phantom
+        dividends.</li>
+        <li><em>Share counts and market values:</em> reconciled to the share counts companies state in their
+        filings.</li>
+        <li><em>Reported fundamentals:</em> figures are used as first filed, and later restatements are never
+        carried back to earlier dates.</li>
+        <li><em>The investable universe:</em> which stocks and months belong, with rules for over-the-counter
+        periods, SPACs, bankruptcies, acquisitions, and spin-offs.</li>
+      </ul>
+    </li>
     <li><strong>Signal tests.</strong> Factor themes (e.g., value, quality, momentum, reversal, liquidity) are
     tested with Fama-MacBeth regressions and portfolio sorts.</li>
     <li><strong>Costs and portfolio construction.</strong> Signals are combined into a market-neutral book and
