@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriel Bonilla, Ph.D.</title>
+<meta name="description" content="Gabriel Bonilla, Ph.D. Financial economist in New York. Research on return signals in U.S. equities.">
+<style>
+  :root {
+    --bg: #fbfaf7; --text: #1d1f23; --muted: #5b616b; --rule: #d9d6cf;
+    --accent: #1f4e79; --card: #f1efe9; --pill-bg: #e6eef6; --pill-text: #1f4e79;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --text: #e8e6e1; --muted: #a2a7b0; --rule: #33373d;
+      --accent: #8fbce6; --card: #1e2125; --pill-bg: #223244; --pill-text: #a9cdf0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+  header { display: flex; gap: 24px; align-items: center; }
+  header img {
+    width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex: none;
+    border: 1px solid var(--rule);
+  }
+  h1 { font: 700 2rem/1.2 Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+  .tagline { margin: 0 0 14px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    display: inline-block; padding: 7px 14px; border-radius: 6px; text-decoration: none;
+    border: 1px solid var(--accent); color: var(--accent); font-size: 0.95rem; font-weight: 600;
+  }
+  .links a.primary { background: var(--accent); color: var(--bg); }
+  h2 {
+    font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+    margin: 44px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 20px; }
+  .card p:last-child { margin-bottom: 0; }
+  .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+  .pill {
+    display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; vertical-align: middle;
+    background: var(--pill-bg); color: var(--pill-text); font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;
+  }
+  .paper { font-style: italic; }
+  footer { margin-top: 52px; color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 560px) {
+    main { padding: 36px 16px 56px; }
+    header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <img src="profile.jpg" alt="Gabriel Bonilla" onerror="this.remove()">
+    <div>
+      <h1>Gabriel Bonilla, Ph.D.</h1>
+      <p class="tagline">Financial economist in New York. I research return signals in U.S. equities.</p>
+      <div class="links">
+        <a class="primary" href="Gabriel_Bonilla_CV.pdf">CV (PDF)</a>
+        <a href="mailto:g.bonilla.jaime@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>About</h2>
+  <p>I hold a Ph.D. in Finance from Duke University&rsquo;s Fuqua School of Business, where I studied how
+  investors&rsquo; cognitive limitations show up in stock prices. I tested trading and stress-testing models at
+  State Street, and I now price debt and value businesses as a Senior Manager at Deloitte.</p>
+  <p>Since 2026 I have been building an independent research platform for U.S. equity signals.</p>
+
+  <h2>Research platform</h2>
+  <p>A point-in-time research pipeline for U.S. stocks from 2010 to 2026, covering about 5,400 companies and
+  390,000 stock-months. It runs from universe construction through signal tests, trading costs and portfolio
+  construction.</p>
+  <ul>
+    <li><strong>Data audit.</strong> Commercial vendor data is checked against SEC filings as of each filing date.
+    One check compared market value with price &times; filed share count on 20 million stock-days and found 2.3%
+    in disagreement.</li>
+    <li><strong>Signal tests.</strong> Of 11 factor themes tested with Fama-MacBeth regressions, one (quality,
+    t&nbsp;=&nbsp;4.1) clears the t&nbsp;&gt;&nbsp;3 multiple-testing threshold. Momentum (t&nbsp;=&nbsp;2.9) falls
+    just short.</li>
+    <li><strong>Portfolio.</strong> A market-neutral book that combines momentum and quality has an out-of-sample
+    Sharpe ratio of 0.7&ndash;0.9 at $250 million, after modeled spread and impact costs.</li>
+    <li><strong>What failed.</strong> Weekly reversal earns a Sharpe ratio of 0.7 before costs and loses money
+    after them, even at $10 million. A low-beta strategy shows no reliable alpha.</li>
+    <li><strong>Current work.</strong> Crowding signals from institutional 13F filings, and returns around earnings
+    announcements.</li>
+  </ul>
+
+  <div class="card">
+    <h3>Interactive results explorer <span class="pill">Work in progress</span></h3>
+    <p>An interactive view of the factor tests and the portfolio results. An updated version is expected by the
+    end of November 2026.</p>
+  </div>
+
+  <h2>Doctoral research</h2>
+  <p class="paper">&ldquo;Investors&rsquo; Cognitive Limitations and the Capital Market Benefits of Avoiding the
+  Recognition of a Compensation Expense in the Income Statement&rdquo; (2018)</p>
+  <p>A portfolio of firms with heavy use of unexpensed stock-option grants earned 10&ndash;22% a year
+  risk-adjusted. The return varied with the investor base and reversed after the 2001&ndash;2002 accounting
+  scandals.</p>
+
+  <footer>Last updated November 2026.</footer>
+
+</main>
+</body>
+</html>
