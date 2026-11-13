@@ -86,13 +86,14 @@
   from universe construction through signal tests, trading costs, and portfolio construction.</p>
   <ul>
     <li><strong>Data audit and revisions.</strong> The platform starts from a commercial vendor database and checks
-    it against the companies&rsquo; SEC filings, as of the date each filing became public. Where the two disagree,
-    the record is corrected from the filing or set aside by rule. The revisions cover share counts and market
-    values, the timing and content of reported fundamentals (figures are used as first filed, and later
+    it against the companies&rsquo; SEC filings, as of the date each filing became public, and against an
+    independent second source for prices. Where the sources disagree, the record is corrected from the evidence or
+    excluded systematically. The revisions cover prices, splits, and dividends (for example, price-entry errors and
+    duplicate or phantom dividends), share counts and market values, the timing and content of reported fundamentals (figures are used as first filed, and later
     restatements are never carried back to earlier dates), and which stocks and months belong in the investable
-    universe. A detailed list of the revisions will be added here.</li>
+    universe.</li>
     <li><strong>Signal tests.</strong> Factor themes (e.g., value, quality, momentum, reversal, liquidity) are
-    tested with Fama-MacBeth regressions and factor portfolios.</li>
+    tested with Fama-MacBeth regressions and portfolio sorts.</li>
     <li><strong>Costs and portfolio construction.</strong> Signals are combined into a market-neutral book and
     evaluated net of modeled trading costs.</li>
     <li><strong>Current work.</strong> Crowding signals from institutional 13F filings, and returns around earnings
